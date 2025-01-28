@@ -31,7 +31,7 @@ Tabs.Main:AddButton({
                     Title = "YES!",
                     Callback = function()
                         local args = {
-                            [1] = "99999999999999"
+                            [1] = "inf"
                         }
                         game:GetService("ReplicatedStorage"):WaitForChild("CratesUtilities"):WaitForChild("Remotes"):WaitForChild("GiveReward"):FireServer(unpack(args))
                         Fluent:Notify({ Title = "Success!", Content = "Infinite money granted!", Duration = 5 })
